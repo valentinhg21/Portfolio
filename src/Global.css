@@ -21,8 +21,13 @@ body {
   position: relative;
 }
 
-a{
+ul{
+  list-style-type: none;
+  color: white;
+}
 
+li{
+  position: relative;
 }
 
 
@@ -40,13 +45,47 @@ a{
   color: white;
   cursor: pointer;
   margin-right: 1rem;
-  transition: all .5s linear;
+}
+
+.onScroll{
+  background: #ab03ff;
+  transition: .8s all ease-in-out;
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  
+}
+
+
+/* HERO */
+.Hero__arrow{
+  font-size: 1.5rem;
+  color: rgb(70, 70, 70);
+
+}
+
+
+/* ABOUT */
+.IcoNButtonAbout{
+  margin-left: .5rem;
+  font-size: 1.2rem;
 }
 
 
 
-.Navbar__logo-menu{
 
+@media (max-width: 575.98px)and (orientation:portrait){
+  /* NAVBAR */
+  .onScroll{
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+  
 }
 
-
+@media (min-width: 576px) and (max-width: 1024px) and (orientation:portrait){
+    /* NAVBAR */
+    .onScroll{
+      padding-top: 0rem !important;
+      padding-bottom: 0rem !important;
+    }
+}

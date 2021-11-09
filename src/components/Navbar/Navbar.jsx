@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
 
 import { RiCodeSSlashFill } from "react-icons/ri";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -18,27 +18,54 @@ import {
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [scrollY, setScrollY] = useState(window.scrollY)
+  // Navbar change
   const handleToggle = () => setToggle(!toggle);
-  const animateFrom = {opacity: 0, y: -40}
-  const animateTo = {opacity: 1, y: 0}
+
+
+  
+  useEffect(() => {
+
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    }
+
+    const changeScrollY = () => {
+      setScrollY(window.scrollY);
+    }
+    
+
+    window.addEventListener('resize', changeWidth)
+    window.addEventListener('scroll', changeScrollY)
+    return () => {
+        window.removeEventListener('resize', changeWidth)
+        window.removeEventListener('scroll', changeScrollY)
+    }
+  }, []) 
+  // Animations
+  const animateFrom = { opacity: 0, y: -40 };
+  const animateTo = { opacity: 1, y: 0 };
+
+
+
+
   return (
-    <NavbarContainer>
+    <NavbarContainer className={(scrollY > 80) && 'onScroll'}>
       <ContainerContent>
         <ContainerLogo>
           <LinkLogo href="!#">
             <RiCodeSSlashFill className="Navbar__Logo" />
           </LinkLogo>
         </ContainerLogo>
-        <ContainerMenu>
-          {!toggle ? (
-            <FaBars className="Navbar__Logo-menu" onClick={handleToggle}
-            />
+        <ContainerMenu >
+          {toggle ? (
+            <FaTimes className="Navbar__Logo-menu" onClick={handleToggle} />
           ) : (
-            <FaTimes className="Navbar__Logo-menu" onClick={handleToggle}/>
+            <FaBars className="Navbar__Logo-menu" onClick={handleToggle} />
           )}
         </ContainerMenu>
-        {toggle && (
+        {(toggle || screenWidth > 1024) && (
           <ContainerItems
             as={motion.div}
             initial={animateFrom}
@@ -46,19 +73,29 @@ const Navbar = () => {
           >
             <List>
               <ItemList>
-                <Link href="!#" onClick={handleToggle}>Inicio</Link>
+                <Link href="!#" onClick={handleToggle}>
+                  Inicio
+                </Link>
               </ItemList>
               <ItemList>
-                <Link href="!#" onClick={handleToggle}>Sobre mi</Link>
+                <Link href="!#" onClick={handleToggle}>
+                  Sobre mi
+                </Link>
               </ItemList>
               <ItemList>
-                <Link href="!#" onClick={handleToggle}>Habilidades</Link>
+                <Link href="!#" onClick={handleToggle}>
+                  Habilidades
+                </Link>
               </ItemList>
               <ItemList>
-                <Link href="!#" onClick={handleToggle}>Proyectos</Link>
+                <Link href="!#" onClick={handleToggle}>
+                  Proyectos
+                </Link>
               </ItemList>
               <ItemList>
-                <Link href="!#" onClick={handleToggle}>Contacto</Link>
+                <Link href="!#" onClick={handleToggle}>
+                  Contacto
+                </Link>
               </ItemList>
             </List>
           </ContainerItems>
