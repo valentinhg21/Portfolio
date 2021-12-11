@@ -43,6 +43,8 @@ const Navbar = () => {
         window.removeEventListener('scroll', changeScrollY)
     }
   }, []) 
+
+  
   // Animations
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
@@ -54,7 +56,7 @@ const Navbar = () => {
     <NavbarContainer className={(scrollY > 80) && 'onScroll'}>
       <ContainerContent>
         <ContainerLogo>
-          <LinkLogo href="!#">
+          <LinkLogo href="#inicio">
             <RiCodeSSlashFill className="Navbar__Logo" />
           </LinkLogo>
         </ContainerLogo>
@@ -73,27 +75,22 @@ const Navbar = () => {
           >
             <List>
               <ItemList>
-                <Link href="!#" onClick={handleToggle}>
+                <Link href="#inicio" onClick={handleToggle}>
                   Inicio
                 </Link>
               </ItemList>
               <ItemList>
-                <Link href="!#" onClick={handleToggle}>
+                <Link href="#sobremi" onClick={handleToggle}>
                   Sobre mi
                 </Link>
               </ItemList>
               <ItemList>
-                <Link href="!#" onClick={handleToggle}>
-                  Habilidades
-                </Link>
-              </ItemList>
-              <ItemList>
-                <Link href="!#" onClick={handleToggle}>
+                <Link href="#proyectos" onClick={handleToggle}>
                   Proyectos
                 </Link>
               </ItemList>
               <ItemList>
-                <Link href="!#" onClick={handleToggle}>
+                <Link href="#contacto" onClick={handleToggle}>
                   Contacto
                 </Link>
               </ItemList>

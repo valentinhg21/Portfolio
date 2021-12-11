@@ -5,22 +5,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
-  /* background-image: linear-gradient(
-    to bottom,
-    #8500ff,
-    #7b00ec,
-    #7100d8,
-    #6700c5,
-    #5d00b3
-  ); */
   width: 100%;
   min-height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
-
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #e1e1e1; 
+  border-radius: 4px; 
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #9400df;
+  border-radius: 4px; 
+}
 ul{
   list-style-type: none;
   color: white;
@@ -28,9 +34,13 @@ ul{
 
 li{
   position: relative;
+  color: #fff;
 }
 
-
+a{
+  text-decoration: none;
+  color: #fff;
+}
 /* NAVBAR */
 .Navbar__Logo{
   font-size: 1.8rem;
@@ -48,11 +58,11 @@ li{
 }
 
 .onScroll{
-  background: #ab03ff;
+  background: #9400df;
   transition: .8s all ease-in-out;
   padding-top: 0rem !important;
   padding-bottom: 0rem !important;
-  
+
 }
 
 
@@ -66,12 +76,39 @@ li{
 
 /* ABOUT */
 .IcoNButtonAbout{
+  
   margin-left: .5rem;
   font-size: 1.2rem;
 }
 
+.Highlight{
+  color:#b72ffc;
+  font-weight: 600;
+}
 
+/* Proyects */
+.IconShowMore{
+  margin-left: .5rem;
+  font-size: 1.2rem;
+}
 
+/* CARD */
+.CardHeader__logo{
+  font-size: 2rem;
+  color: #b72ffc;
+  transition: .3s all ease-in-out;
+}
+
+.CardHeader__logo:hover{
+  color: #9400df;
+}
+
+/* CONTACT */
+.IcoNButtonContact{
+  margin-right: .5rem;
+  margin-left: .5rem;
+  font-size: 1.2rem;
+}
 
 @media (max-width: 575.98px)and (orientation:portrait){
   /* NAVBAR */
@@ -79,7 +116,12 @@ li{
     padding-top: 0rem !important;
     padding-bottom: 0rem !important;
   }
-  
+
+  /* Proyects */
+  .ProyectsFilter__list{
+    display: none;
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 1024px) and (orientation:portrait){
@@ -88,4 +130,13 @@ li{
       padding-top: 0rem !important;
       padding-bottom: 0rem !important;
     }
+
+
+    .ProyectsFilter__item{
+      margin-right: .8rem;
+      margin-left: .8rem;
+      font-size: .8rem;
+    }
 }
+
+

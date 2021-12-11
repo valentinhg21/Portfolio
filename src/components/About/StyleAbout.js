@@ -8,6 +8,8 @@ const media = {
 };
 
 export const AboutContainer = styled.div`
+
+    padding-top: 5rem;
     background: #0a0d22;
     width: 100%;
     min-height: 100vh;
@@ -16,6 +18,9 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    ${media.mobile}{
+        padding-top: 5rem;
+    }
 `
 
 export const AboutTitle = styled.h1`
@@ -78,15 +83,18 @@ export const AboutDescriptionTitle = styled.h2`
     font-size: 2rem;
     letter-spacing: .1;
     ${media.mobile}{
+        margin-top: 2rem;
         font-size: 1.8rem;
 
     }
 
     ${media.tablet}{
+        margin-top: 2rem;
         font-size: 1.9rem;
 
     }
     ${media.notebook}{
+        margin-top: 2rem;
         font-size: 1.9rem;
 
     }
@@ -95,17 +103,18 @@ export const AboutDescriptionTitle = styled.h2`
 export const AboutDescriptionContent = styled.p`
     margin-top:1.2rem;
     margin-bottom: 1.2rem;
-    line-height: 1.3rem;
+    line-height: 1.8rem;
     font-size: 1rem;
     ${media.mobile}{
         text-align: center;
         font-size: .8rem;
+        line-height: 1.3rem;
     }
     ${media.tablet}{
         width: 90%;
         text-align: center;
         font-size: .9rem;
-
+        line-height: 1.7rem;
     }
     ${media.notebook}{
         width: 80%;
@@ -115,11 +124,12 @@ export const AboutDescriptionContent = styled.p`
 
 
 export const AboutButton = styled.a`
-    background: #a63fda;
+    background: #ac1bf5;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 150px;
+    height: 40px;
     font-size: .9rem;
     color: white;
     text-decoration: none;
@@ -131,8 +141,9 @@ export const AboutButton = styled.a`
     margin-top: .5rem;
     margin-bottom: .5rem;
     transition: .25s all ease-in-out;
+
     &:hover{
-        background: #ac1bf5;
+        background: #9400df;
     }
 
     ${media.mobile}{

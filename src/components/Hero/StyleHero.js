@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const media = {
   mobile: "@media (max-width: 575.98px)and (orientation:portrait)",
@@ -75,7 +75,7 @@ export const Ocupation = styled.p`
   }
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.a`
   margin-top: 2rem;
   position: relative;
   width: 40px;

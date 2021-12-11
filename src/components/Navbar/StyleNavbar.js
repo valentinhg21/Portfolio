@@ -23,13 +23,13 @@ export const NavbarContainer = styled.nav`
   transition: .8s all ease-in-out;
   /* MOBILE */
   ${media.mobile} {
-    background: #ab03ff;
+    background: #9400df;
     padding-top: 0rem;
     padding-bottom: 0rem;
   }
   /* LAPTOS AND IPADS */
   ${media.tablet} {
-    background: #ab03ff;
+    background: #9400df;
     padding-top: 0rem;
     padding-bottom: 0rem;
   }
@@ -79,18 +79,17 @@ export const ContainerMenu = styled.div`
 
 export const ContainerItems = styled.div`
   position: absolute;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
   /* MOBILE */
   ${media.mobile} {
-    margin-top: 18rem;
+    margin-top: 16rem;
   }
   /* TABLETS AND IPADS */
   ${media.tablet} {
-    margin-top: 18rem;
+    margin-top: 16rem;
   }
 
   
@@ -106,14 +105,14 @@ export const List = styled.ul`
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        background: #ab03ff;
+        background: #9400df;
   }
 
   ${media.tablet} {
     width: 100%;
         flex-direction: column;
         justify-content: center;
-        background: #ab03ff;
+        background: #9400df;
   }
 
 `;

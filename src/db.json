@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nameProject": "LinkedIn Clone",
+    "description": "Es un simple clone de linkedind construido con React, Redux y Firebase.",
+    "preview": "https://linkedin-clone-731c4.web.app/",
+    "tech":["React", "Redux", "Firebase"]
+    
+  },
+  {
+    "id": 2,
+    "nameProject": "Netflix Clone",
+    "description": "Es un simple clone de Netflix construido con React.",
+    "preview": "https://netflix-clone-78aa8.firebaseapp.com/",
+    "tech":["React", "CSS3" ]
+    
+  },
+  {
+    "id": 3,
+    "nameProject": "E-Commerce Clipboard - CoderHouse",
+    "description": "E-commerce de productos gamers, realizado para el curso de React en Coderhouse, Esta construido con React y Firebase.",
+    "preview": "https://coderhouse-clipboard-ecomerce.netlify.app/",
+    "tech":["React", "CSS3", "Firebase"]
+  
+    
+  }
+
+
+]

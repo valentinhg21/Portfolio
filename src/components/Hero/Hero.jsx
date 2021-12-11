@@ -3,13 +3,17 @@ import { IoMdArrowRoundDown } from "react-icons/io";
 
 
 const Hero = () => {
+
+
+
+  
   return (
     <>
-    <HeroContainer className="HeroContainer">
+    <HeroContainer className="HeroContainer" id="inicio">
         <ContainerHero>
             <TitleName>Valentín Gutiérrez</TitleName>
             <Ocupation>Desarrollador Web </Ocupation>
-            <Circle>
+            <Circle href="#sobremi">
                 <IoMdArrowRoundDown className="Hero__arrow"/>
             </Circle>
         </ContainerHero>

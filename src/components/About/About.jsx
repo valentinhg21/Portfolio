@@ -15,16 +15,21 @@ import { RiArrowDownSLine } from "react-icons/ri";
 
 const About = () => {
   return (
-    <AboutContainer>
-      <AboutTitle>Sobre mi</AboutTitle>
+    <AboutContainer id="sobremi">
+      <AboutTitle>Sobre <span className="Highlight">mi</span></AboutTitle>
       <AboutContent>
         <AboutDescription>
-          <AboutDescriptionTitle>Freelancer</AboutDescriptionTitle>
+          <AboutDescriptionTitle>FreeLancer</AboutDescriptionTitle>
           <AboutDescriptionContent>
-            Mi nombre es Valentín, soy desarollador web y me considero un
-            apasionado a las nuevas tecnologias. Me encanta construir paginas
-            actractivas para el usuario. Chequea mi portfolio para ver mis
-            trabajos realizados.
+            ¡Hola! Mi nombre es Valentín y soy un apasionado a las nuevas tecnologias.
+            Mi interés en el desarollo web comenzó en 2020 cuándo decidí en entrar al mundo de la programación.
+            De forma autodidacta aprendi mucho de <span className="Highlight">HTML CSS y JAVASCRIPT.</span><br />
+
+            Avance muy rápido hasta el día de hoy y tuve el privilegio en trabajar de forma freelance para una 
+            empresa emergente desarollando paginas web en <span className="Highlight">WORDPRESS.</span><br />
+
+            Mi enfoque principal en estos dias es crear experiencias de usuarios únicas para una variedad de clientes. <br/>
+            Pueden chequear mi portfolio para ver mis últimos proyectos.<br />
           </AboutDescriptionContent>
           <AboutButton href="!#">
             Portfolio
