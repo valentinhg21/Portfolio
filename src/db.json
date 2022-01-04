@@ -24,6 +24,15 @@
   
     
   }
+    {
+    "id": 4,
+    "nameProject": "E-Commerce LosVasquitos",
+    "description": "E-commerce de productos de muebles, realizado en Wordpress",
+    "preview": "https://losvasquitos.com.ar/",
+    "tech":["Wordpress", "CSS3", "HTML"]
+  
+    
+  }
 
 
 ]
