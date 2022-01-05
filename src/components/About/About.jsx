@@ -26,12 +26,12 @@ const About = () => {
             De forma autodidacta aprendi mucho de <span className="Highlight">HTML CSS y JAVASCRIPT.</span><br />
 
             Avance muy rápido hasta el día de hoy y tuve el privilegio en trabajar de forma freelance para una 
-            empresa emergente desarollando paginas web en <span className="Highlight">WORDPRESS.</span><br />
+            empresa emergente desarrollando paginas web en <span className="Highlight">WORDPRESS.</span><br />
 
             Mi enfoque principal en estos dias es crear experiencias de usuarios únicas para una variedad de clientes. <br/>
             Pueden chequear mi portfolio para ver mis últimos proyectos.<br />
           </AboutDescriptionContent>
-          <AboutButton href="!#">
+          <AboutButton href="#proyectos">
             Portfolio
             <RiArrowDownSLine className="IcoNButtonAbout"/>
           </AboutButton>

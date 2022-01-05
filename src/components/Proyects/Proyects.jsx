@@ -8,7 +8,7 @@ import data from '../../db.json';
 import { TiPlus } from 'react-icons/ti'
 
 const Proyects = () => {
-    const [ visible, setVisible] = useState(3);
+    const [ visible, setVisible] = useState(6);
 
     const showMoreProjects = () => {
         setVisible((preValue) => preValue + 3);

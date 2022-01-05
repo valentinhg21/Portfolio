@@ -1,14 +1,30 @@
 [
   {
     "id": 1,
+    "nameProject": "E-Commerce LosVasquitos",
+    "description": "E-commerce de muebles para el hogar, realizado en Wordpress.",
+    "preview": "https://losvasquitos.com.ar/",
+    "tech":["Wordpress", "CSS3"]
+
+  },
+  {
+    "id": 2,
+    "nameProject": "Landing Page Construcciones Preven",
+    "description": "Landing page realizado en Wordpress para una empresa dedicada a la consultoria de seguridad e higiene en el ámbito de la construcción.",
+    "preview": "https://construccion.preven.com.ar/",
+    "tech":["Wordpress", "CSS3"]
+
+  },
+  {
+    "id": 3,
     "nameProject": "LinkedIn Clone",
-    "description": "Es un simple clone de linkedind construido con React, Redux y Firebase.",
+    "description": "Es un simple clone de linkedin construido con React, Redux y Firebase.",
     "preview": "https://linkedin-clone-731c4.web.app/",
     "tech":["React", "Redux", "Firebase"]
     
   },
   {
-    "id": 2,
+    "id": 4,
     "nameProject": "Netflix Clone",
     "description": "Es un simple clone de Netflix construido con React.",
     "preview": "https://netflix-clone-78aa8.firebaseapp.com/",
@@ -16,14 +32,10 @@
     
   },
   {
-    "id": 3,
+    "id": 5,
     "nameProject": "E-Commerce Clipboard - CoderHouse",
     "description": "E-commerce de productos gamers, realizado para el curso de React en Coderhouse, Esta construido con React y Firebase.",
     "preview": "https://coderhouse-clipboard-ecomerce.netlify.app/",
     "tech":["React", "CSS3", "Firebase"]
-  
-    
   }
-
-
 ]

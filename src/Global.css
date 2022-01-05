@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
   width: 10px;
 }
 body::-webkit-scrollbar-track {
-  background: #e1e1e1; 
+  background: #fdfdfd; 
   border-radius: 4px; 
 }
 body::-webkit-scrollbar-thumb {
